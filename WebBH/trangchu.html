@@ -4,26 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
+    <title>HD Shop</title>
+    <link rel="stylesheet" href="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+                integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="trangchu.html">
-            <img src="./Picture/logoHD.jpg" alt="" id="logo">
-        </a>
-        <nav>
-            <div class="nav_link">
-                <a href="trangchu.html">Trang Chủ</a>
-                <a href="cuahang.html">Cửa Hàng</a>
-                <a href="chinhsach.html">Chính Sách</a>
-                <a href="taikhoan.html">Tài Khoản</a>
-                <a href="giohang.html">Giỏ Hàng</a>
+    <header class="container">
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-underline">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cuahang.html">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chinhsach.html">Chính sách</a>
+                    </li>
+                </ul>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Nhập sản phẩm cần tìm">
-                <i class="search_icon"></i>
-                <i class="user-solid"></i>
-                <i class="cart-shopping-solid"></i>
+            <a class="navbar-brand" href="#">
+                <img src="./Picture/logoHD.jpg" alt="" id="logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="search">
+                   
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </nav>
     </header>
