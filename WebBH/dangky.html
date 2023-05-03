@@ -92,7 +92,7 @@
                                             </div>
                                             <button type="submit">Đăng Nhập</button>
                                             <div class="login-register">
-                                                <p>Chưa có tài khoản <a href="dangky.html" class="register-link">Đăng ký</a></p>
+                                                <p>Chưa có tài khoản <a href="" class="register-link">Đăng ký</a></p>
                                             </div>
                                         </form>
                                     </div>                               
@@ -113,77 +113,32 @@
         </nav>
     </header>
     <main class="main.one">
-        <img src="./Picture/Trang chu/zara.jpg" alt="" class="trangchu_jpg" >
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./Picture/Trang chu/a3.png" class="img-fluid" alt="">
+            <form id="form" action="/" onsubmit="return validateDangKy()">
+                <h1>Đăng Ký</h1>
+                <div class="input-control">
+                    <label for="username">Tên Đăng Nhập</label>
+                    <input id="username" name="username" type="text">
                 </div>
-                <div class="col-sm-4">
-                    <img src="./Picture/Trang chu/a2.png" class="img-fluid" alt="">
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
                 </div>
-                <div class="col-sm-4">
-                    <img src="./Picture/Trang chu/a1.png" class="img-fluid" alt="">
+                <div class="input-control">
+                    <label for="password">Mật Khẩu</label>
+                    <input id="password"name="password" type="password">
                 </div>
-            </div>
+                <div class="input-control">
+                    <label for="password2">Nhập Lại Mật Khẩu</label>
+                    <input id="password2"name="password2" type="password">
+                </div>
+                <button type="submit">Đăng Ký</button>
+                <div class="login-register">
+                    <p>Đã tạo tài khoản thành công <a href="trangchu.html" class="register-link">Tại đây</a></p>
+                </div>
+            </form>
         </div>
-        <h1 class="acticle">Item</h1>
-        <section class="section_2">
-            <div class="section_2--center">
-                <img src="./Picture/Trang chu/tc1.jpg" alt="" class="aside.center-side">
-            </div> 
-        </section>
-        <section class="section_3">
-            <div class="section_2--center">
-                <div class="section_4--img">
-                    <img src="./Picture/Trang chu/a7.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Blazer</button>
-                </div>
-            </div>
-            <div class="section_2--center">
-                <div class="section_4--img">
-                    <img src="./Picture/Quần áo/Sơ mi/Shirt_trc.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Shirt</button>
-                </div>
-            </div>
-            <div class="section_2--center">
-                <div class="section_4--img">    
-                    <img src="./Picture/Quần áo/Áo thun/Bolo_trc.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Bolo Shirt</button>
-                </div>
-            </div>
-            <div class="section_2--center">
-                <div class="section_4--img">
-                    <img src="./Picture/Quần áo/Quần dài/Pants_trc.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Pants</button>
-                </div>
-            </div>
-            <div class="section_2--center">
-                <div class="section_4--img">
-                    <img src="./Picture/Quần áo/Quần jeans/Jean_trc.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Jeans</button>
-                </div>
-            </div>
-            <div class="section_2--center">
-                <div class="section_4--img">
-                    <img src="./Picture/Quần áo/Quần ngắn/Short_trc.jpg" alt="" class="aside.center-side">
-                </div>
-                <div class="section4--button">
-                    <button type="button">Short</button>
-                </div>
-            </div>
-        </section>
-        <img src="./Picture/zara1.jpg">
+    
     </main>
     <footer>
         <div class="section_5--footer">
