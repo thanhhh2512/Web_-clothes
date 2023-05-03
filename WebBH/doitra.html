@@ -27,54 +27,164 @@
 <body>
     <header class="container">
         <nav class="navbar navbar-expand-sm">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="trangchu.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cửa hàng</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Jacket</a></li>
-                            <li><a class="dropdown-item" href="#">Blazer</a></li>
-                            <li><a class="dropdown-item" href="#">Shirt</a></li>
-                            <li><a class="dropdown-item" href="#">Bolo Shirt</a></li>
-                            <li><a class="dropdown-item" href="#">Pants</a></li>
-                            <li><a class="dropdown-item" href="#">Jean</a></li>
-                            <li><a class="dropdown-item" href="#">Short</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Chính sách</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="gioithieu.html">Giới thiệu về HD</a></li>
-                            <li><a class="dropdown-item" href="muahang.html">Chính sách mua hàng</a></li>
-                            <li><a class="dropdown-item" href="doitra.html">Chính sách đổi trả</a></li>
-                        </ul>
-                    </li>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="trangchu.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Cửa hàng</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Jacket</a></li>
+                  <li><a class="dropdown-item" href="#">Blazer</a></li>
+                  <li><a class="dropdown-item" href="#">Shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Bolo Shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Pants</a></li>
+                  <li><a class="dropdown-item" href="#">Jean</a></li>
+                  <li><a class="dropdown-item" href="#">Short</a></li>
                 </ul>
-            </div>
-            <a class="nav justify-content-center" href="#">
-                <img src="./Picture/logoHD.jpg" alt="" id="logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav justify-content-end">
-                    <li class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </li>
-                    <li class="user">
-                        <i class="fa-solid fa-user"></i>
-                    </li>
-                    <li class="cart-shopping">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Chính sách</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="gioithieu.html"
+                      >Giới thiệu về HD</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="muahang.html"
+                      >Chính sách mua hàng</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="doitra.html"
+                      >Chính sách đổi trả</a
+                    >
+                  </li>
                 </ul>
-            </div>
+              </li>
+            </ul>
+          </div>
+          <a class="nav justify-content-center" href="#">
+            <img src="./Picture/logoHD.jpg" alt="" id="logo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav justify-content-end">
+              <li class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li class="user">
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                          Đăng nhập
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+                          <form
+                            id="form"
+                            action="/"
+                            onsubmit="return validateDangNhap()"
+                          >
+                            <h1>Đăng Nhập</h1>
+                            <div class="input-control">
+                              <label for="email">Email</label>
+                              <input id="email" name="email" type="email" />
+                            </div>
+                            <div class="input-control">
+                              <label for="password">Mật Khẩu</label>
+                              <input
+                                id="password"
+                                name="password"
+                                type="password"
+                              />
+                            </div>
+                            <div class="remember-forgot">
+                              <label
+                                ><input type="checkbox" />Nhớ Tài Khoản</label
+                              >
+                              <a href="quenmk.html">Quên Mật Khẩu?</a>
+                            </div>
+                            <button type="submit">Đăng Nhập</button>
+                            <div class="login-register">
+                              <p>
+                                Chưa có tài khoản
+                                <a href="dangky.html" class="register-link"
+                                  >Đăng ký</a
+                                >
+                              </p>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-primary"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="fa-solid fa-user"
+                  data-bs-target="#exampleModalToggle"
+                  data-bs-toggle="modal"
+                ></a>
+              </li>
+              <li class="cart-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
+      </header>
     <main class="main.one">
         <h1>Chính sách đổi trả</h1>
         <p>Quy định về đổi hàng</p>
